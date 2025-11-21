@@ -20,10 +20,10 @@
 
         default_layer {
             bindings = <
-&kp TAB    &kp Q         &kp W         &kp E          &kp R          &kp T          &kp Y             &kp U      &kp I      &kp O    &kp P                           &kp MINUS
-&kp CAPS   &kp A         &kp S         &kp D          &kp F          &kp G          &kp H             &kp J      &kp K      &kp L    &mt RIGHT_CONTROL LEFT_BRACKET
-&kp LSHFT  &kp Z         &kp X         &kp C          &kp V          &kp B          &kp N             &kp M      &kp COMMA  &kp DOT  &mt RSHIFT QMARK
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &lt RSE SPACE  &lt LWR ENTER  &kp BACKSPACE  &lt FN BACKSPACE  &kp RCTRL
+&kp TAB    &kp Q         &kp W         &kp E          &kp R          &kp T          &kp Y             &kp U       &kp I      &kp O    &kp P                           &kp MINUS
+&kp CAPS   &kp A         &kp S         &kp D          &kp F          &kp G          &kp H             &kp J       &kp K      &kp L    &mt RIGHT_CONTROL LEFT_BRACKET
+&kp LSHFT  &kp Z         &kp X         &kp C          &kp V          &kp B          &kp N             &kp M       &kp COMMA  &kp DOT  &mt RSHIFT QMARK
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &lt RSE SPACE  &lt LWR ENTER  &kp BACKSPACE  &lt FN BACKSPACE  &lt 5 CLCK
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -42,9 +42,9 @@
 
         raise_layer {
             bindings = <
-&kp TILDE       &kp N1        &kp N2           &kp N3         &kp N4          &kp N5             &kp N6      &kp N7           &kp N8    &kp N9     &kp N0             &kp MINUS
-&kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp PAGE_UP    &kp LANGUAGE_1  &kp KP_MINUS       &kp LEFT    &kp DOWN         &kp UP    &kp RIGHT  &kp RIGHT_BRACKET
-&kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp PAGE_DOWN  &kp LANG2       &kp KP_PLUS        &none       &none            &kp SEMI  &kp SLASH  &kp RSHFT
+&kp TILDE       &kp N1        &kp N2           &kp N3         &kp N4          &kp N5             &kp N6      &kp N7           &kp N8  &kp N9  &kp N0             &kp MINUS
+&kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp PAGE_UP    &kp LANGUAGE_1  &kp HOME           &trans      &trans           &trans  &trans  &kp RIGHT_BRACKET
+&kp LEFT_ARROW  &kp DOWN      &kp RIGHT_ARROW  &kp PAGE_DOWN  &kp LANG2       &kp END            &none       &none            &trans  &trans  &kp RSHFT
 &none           &none         &none            &kp SPACE      &lt ADJ SPACE   &kp C_VOLUME_DOWN  &kp C_MUTE  &kp C_VOLUME_UP
             >;
 
@@ -75,7 +75,7 @@
 
         fn_layer {
             bindings = <
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6        &kp F7  &kp F8          &kp F9  &kp F10         &kp F11      &kp F12
+&kp ESCAPE  &kp F14       &kp F15       &kp F4        &kp F5        &kp F6        &kp F7  &kp F8          &kp F9  &kp F10         &kp F11      &kp F12
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none   &none           &none   &none           &sys_reset
 &none       &out OUT_USB  &out OUT_BLE  &out OUT_TOG  &none         &none         &none   &none           &none   &studio_unlock  &bootloader
 &to DEF     &to GAM       &none         &none         &none         &none         &none   &studio_unlock
